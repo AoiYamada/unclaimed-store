@@ -1,0 +1,39 @@
+services:
+  payload:
+    image: node:20.13.1-alpine
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/home/node/app
+      - node_modules:/home/node/app/node_modules
+    working_dir: /home/node/app/
+    command: sh -c "yarn install && yarn dev"
+    depends_on:
+      - mongo
+    env_file:
+      - .env
+
+  mongo:
+    image: 7.0.9-ubuntu2204
+    ports:
+      - '27017:27017'
+    command:
+      - --storageEngine=wiredTiger
+    volumes:
+      - data:/data/db
+    logging:
+      driver: none
+
+volumes:
+  data:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: './volumes/mongodb'
+  node_modules:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: './node_modules'
