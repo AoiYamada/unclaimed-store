@@ -1,1 +1,4 @@
 mkdir -p volumes/mongodb
+
+# for cmd `yarn generate:types`, which uses `@swc-node/core` and has a peer dependency on `@swc/core`
+yarn add -D @swc/core
