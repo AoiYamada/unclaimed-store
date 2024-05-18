@@ -4,6 +4,7 @@ import { admins } from '../../access/admins'
 import adminsAndUser from './access/adminsAndUser'
 import { anyone } from '../../access/anyone'
 import { loginAfterCreate } from './hooks/loginAfterCreate'
+import { resolveDuplicatePurchases } from './hooks/resolveDuplicatePurchases'
 
 export const Users: CollectionConfig = {
   slug: 'users',
@@ -19,6 +20,8 @@ export const Users: CollectionConfig = {
     admin: admins,
   },
   hooks: {
+    // FIXME: we don't use stripe
+    // beforeChange: [createStripeCustomer],
     afterChange: [loginAfterCreate],
   },
   auth: true,
@@ -51,43 +54,43 @@ export const Users: CollectionConfig = {
         update: admins,
       },
     },
-    // {
-    //   name: 'purchases',
-    //   label: 'Purchases',
-    //   type: 'relationship',
-    //   relationTo: 'products',
-    //   hasMany: true,
-    //   hooks: {
-    //     beforeChange: [resolveDuplicatePurchases],
-    //   },
-    // },
-    // {
-    //   label: 'Cart',
-    //   name: 'cart',
-    //   type: 'group',
-    //   fields: [
-    //     {
-    //       name: 'items',
-    //       label: 'Items',
-    //       type: 'array',
-    //       interfaceName: 'CartItems',
-    //       fields: [
-    //         {
-    //           name: 'product',
-    //           type: 'relationship',
-    //           relationTo: 'products',
-    //         },
-    //         {
-    //           name: 'quantity',
-    //           type: 'number',
-    //           min: 0,
-    //           admin: {
-    //             step: 1,
-    //           },
-    //         },
-    //       ],
-    //     },
-    //   ],
-    // },
+    {
+      name: 'purchases',
+      label: 'Purchases',
+      type: 'relationship',
+      relationTo: 'products',
+      hasMany: true,
+      hooks: {
+        beforeChange: [resolveDuplicatePurchases],
+      },
+    },
+    {
+      label: 'Cart',
+      name: 'cart',
+      type: 'group',
+      fields: [
+        {
+          name: 'items',
+          label: 'Items',
+          type: 'array',
+          interfaceName: 'CartItems',
+          fields: [
+            {
+              name: 'product',
+              type: 'relationship',
+              relationTo: 'products',
+            },
+            {
+              name: 'quantity',
+              type: 'number',
+              min: 0,
+              admin: {
+                step: 1,
+              },
+            },
+          ],
+        },
+      ],
+    },
   ],
 }

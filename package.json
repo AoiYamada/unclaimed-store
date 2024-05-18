@@ -17,7 +17,7 @@
     "@payloadcms/db-mongodb": "beta",
     "@payloadcms/next": "beta",
     "@payloadcms/plugin-cloud": "beta",
-    "@payloadcms/richtext-lexical": "beta",
+    "@payloadcms/richtext-slate": "^3.0.0-beta.34",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.1",
     "next": "14.3.0-canary.28",
