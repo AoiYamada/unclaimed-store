@@ -14,14 +14,14 @@
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "beta",
-    "@payloadcms/next": "beta",
-    "@payloadcms/plugin-cloud": "beta",
-    "@payloadcms/richtext-slate": "^3.0.0-beta.34",
+    "@payloadcms/db-mongodb": "3.0.0-beta.34",
+    "@payloadcms/next": "3.0.0-beta.34",
+    "@payloadcms/plugin-cloud": "3.0.0-beta.34",
+    "@payloadcms/richtext-slate": "3.0.0-beta.34",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.1",
     "next": "14.3.0-canary.28",
-    "payload": "beta",
+    "payload": "3.0.0-beta.34",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "0.32.6"

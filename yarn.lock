@@ -1313,10 +1313,10 @@
   resolved "https://registry.yarnpkg.com/@one-ini/wasm/-/wasm-0.1.1.tgz#6013659736c9dbfccc96e8a9c2b3de317df39323"
   integrity sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==
 
-"@payloadcms/db-mongodb@beta":
-  version "3.0.0-beta.30"
-  resolved "https://registry.yarnpkg.com/@payloadcms/db-mongodb/-/db-mongodb-3.0.0-beta.30.tgz#c804652f67c7f78e826b28bec4ca164b829aeb15"
-  integrity sha512-G3odtY5IkaKiNBOdR1kuROnlYxI8bJy6s+EE4NQgLJ/q1IKDy+8SfKswiT31evD7l4ub9QjQSOXKjEDLtZhHRQ==
+"@payloadcms/db-mongodb@3.0.0-beta.34":
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@payloadcms/db-mongodb/-/db-mongodb-3.0.0-beta.34.tgz#5310e351550f3749a4c4fb170f07abae8acc28bc"
+  integrity sha512-pdR85BxPYDeUdh+xIwPuxVSbEwmoao+fGPTU39kWEpmY01byvaeWWReswL67/dIMBjlghAA1tWzO2JZ7aGY7ZA==
   dependencies:
     bson-objectid "2.0.4"
     deepmerge "4.3.1"
@@ -1327,31 +1327,31 @@
     prompts "2.4.2"
     uuid "9.0.0"
 
-"@payloadcms/email-nodemailer@^3.0.0-beta.30":
+"@payloadcms/email-nodemailer@^3.0.0-beta.34":
   version "3.0.0-canary.f6e77b8"
   resolved "https://registry.yarnpkg.com/@payloadcms/email-nodemailer/-/email-nodemailer-3.0.0-canary.f6e77b8.tgz#dc10e793168a5e82042036e5ecbf5c8de57673fe"
   integrity sha512-jXtqEdfmpEJhCoEVkWH4PkNziT84y1Wp58EuBNAZ/ylUBvjEHhdBojKzvso24S0n/qXLkSjE0eFHq1EngaHOyQ==
   dependencies:
     nodemailer "6.9.10"
 
-"@payloadcms/graphql@3.0.0-beta.30":
-  version "3.0.0-beta.30"
-  resolved "https://registry.yarnpkg.com/@payloadcms/graphql/-/graphql-3.0.0-beta.30.tgz#8d0139dbd1526a5241778947f617902eeea5350e"
-  integrity sha512-VdCNtRZ5/OphY4/8csHgvHRZsediI582iuzdQdQ3aKfee1QblY6JLOtIOC29wf6THg/lZsWL89RNQprVbb+q/A==
+"@payloadcms/graphql@3.0.0-beta.34":
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@payloadcms/graphql/-/graphql-3.0.0-beta.34.tgz#ab08b60416168421a58ce2367b4ee6a9092339ae"
+  integrity sha512-ALB+8Pe6UuXui2CKZ5UDiU3qGhTP+hMlpcMsZ4uXX1IeqBUadKe+S4Cj32yYrFq/JJ9nKCj23LNNwfuHLBZNRQ==
   dependencies:
     graphql-scalars "1.22.2"
     pluralize "8.0.0"
     ts-essentials "7.0.3"
 
-"@payloadcms/next@beta":
-  version "3.0.0-beta.30"
-  resolved "https://registry.yarnpkg.com/@payloadcms/next/-/next-3.0.0-beta.30.tgz#bae16b7c05e2b01e6c4309dbdb4fc29f0020bed4"
-  integrity sha512-Gu3jhXUBBP1bEBi9Zzh+zg0QnAEk8kOvM+ohgLeyQJrEzd4rIPYoEhPDpahZ3iKdnKsfIfBe5KeFjm9fjeDtgw==
+"@payloadcms/next@3.0.0-beta.34":
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@payloadcms/next/-/next-3.0.0-beta.34.tgz#0563c1ab2da57b63c8ba2037a8b705d4419349a7"
+  integrity sha512-NkIweEZXzRjqt1SufC2bu4Zs+uiiJzQB0+8MT5V5Q3FxEMQyEF/7pjgAZtfikMG75IHzE8gp/YP4xP5ULemd0A==
   dependencies:
     "@dnd-kit/core" "6.0.8"
-    "@payloadcms/graphql" "3.0.0-beta.30"
-    "@payloadcms/translations" "3.0.0-beta.30"
-    "@payloadcms/ui" "3.0.0-beta.30"
+    "@payloadcms/graphql" "3.0.0-beta.34"
+    "@payloadcms/translations" "3.0.0-beta.34"
+    "@payloadcms/ui" "3.0.0-beta.34"
     "@types/busboy" "^1.5.3"
     busboy "^1.6.0"
     deep-equal "2.2.2"
@@ -1362,25 +1362,25 @@
     path-to-regexp "^6.2.1"
     qs "6.11.2"
     react-diff-viewer-continued "3.2.6"
-    react-toastify "8.2.0"
+    react-toastify "10.0.5"
     sass "^1.71.1"
     ws "^8.16.0"
 
-"@payloadcms/plugin-cloud@beta":
-  version "3.0.0-beta.30"
-  resolved "https://registry.yarnpkg.com/@payloadcms/plugin-cloud/-/plugin-cloud-3.0.0-beta.30.tgz#6c9fe0395c59fb9dcf87d7118309bfd03294faff"
-  integrity sha512-CJCjLNHKtdtc/RfWeCMWj4vSFAACJYiv1W5IHO+jvx49E4NgtXPhs5ugCi5Rs/rX6oP0JXoEc8+g+lPR7KM/Kw==
+"@payloadcms/plugin-cloud@3.0.0-beta.34":
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@payloadcms/plugin-cloud/-/plugin-cloud-3.0.0-beta.34.tgz#d38fe14a4be1e869aabd69b90e573045fc449537"
+  integrity sha512-qPd7X4Z+NOc73DWOIOb2Rs7j9Zv8Gepuymr3j+snNzoeTxVYm9P4CbpeIsPwaahVmAAmc8DPkbi01KbJcnuA/g==
   dependencies:
     "@aws-sdk/client-cognito-identity" "^3.525.0"
     "@aws-sdk/client-s3" "^3.525.0"
     "@aws-sdk/credential-providers" "^3.525.0"
     "@aws-sdk/lib-storage" "^3.525.0"
-    "@payloadcms/email-nodemailer" "^3.0.0-beta.30"
+    "@payloadcms/email-nodemailer" "^3.0.0-beta.34"
     amazon-cognito-identity-js "^6.1.2"
     nodemailer "6.9.10"
     resend "^0.17.2"
 
-"@payloadcms/richtext-slate@^3.0.0-beta.34":
+"@payloadcms/richtext-slate@3.0.0-beta.34":
   version "3.0.0-beta.34"
   resolved "https://registry.yarnpkg.com/@payloadcms/richtext-slate/-/richtext-slate-3.0.0-beta.34.tgz#553bf3ccc93d688f2b2e71aa7a341a4f0ae37e18"
   integrity sha512-CGzgp5EmWxL6sV50tg2DuR1aTsGcFyfcutmi7gOGVpMuSc51X1xtcTa6eEzmlSzgcinNJqdrI15ZEyLCcJKIig==
@@ -1392,15 +1392,15 @@
     slate-hyperscript "0.81.3"
     slate-react "0.92.0"
 
-"@payloadcms/translations@3.0.0-beta.30":
-  version "3.0.0-beta.30"
-  resolved "https://registry.yarnpkg.com/@payloadcms/translations/-/translations-3.0.0-beta.30.tgz#3c159d604636ef2ca8d2c2072d4bd5c6f8fe108c"
-  integrity sha512-0cHhA/oUP1QukLTUEJCX3UjOHWzdavopTVgYbHOucxP9jG2DTctIirpszQGKcY2vVLXQWBda3O14M2/N93rtTg==
+"@payloadcms/translations@3.0.0-beta.34":
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@payloadcms/translations/-/translations-3.0.0-beta.34.tgz#3f4ec118c90bec9ec967e49c5471a492992d1728"
+  integrity sha512-ZK+m7BzdKYLhQoxU+z9T4GG1B3L+aV0SoPrB6R6K47OscizvyDWTeJgzmct5n8vH2SWhUaEEUeKuXepFchBmeQ==
 
-"@payloadcms/ui@3.0.0-beta.30":
-  version "3.0.0-beta.30"
-  resolved "https://registry.yarnpkg.com/@payloadcms/ui/-/ui-3.0.0-beta.30.tgz#3af999c71033d59c3ec066fcab4e231313ef7834"
-  integrity sha512-vmRVV8tSA46BRPzqSRcKk8LZboBWrRb/P9lraDbWreFhgnOOTU2gOx40BgbJWrZgXo9oJKANAHZ6joUjnSnbCg==
+"@payloadcms/ui@3.0.0-beta.34":
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/@payloadcms/ui/-/ui-3.0.0-beta.34.tgz#b789281a32630475c2497340fb405f964db45dea"
+  integrity sha512-uV7eGYfnYTxCNSnmonym20D7clFApSUarvs47FaR2Y0mgP+orkRGwJSqebkhbXdata1wepA4DaqN4PI+Ac5SRg==
   dependencies:
     "@dnd-kit/core" "6.0.8"
     "@dnd-kit/sortable" "7.0.2"
@@ -1408,7 +1408,7 @@
     "@faceless-ui/scroll-info" "1.3.0"
     "@faceless-ui/window-info" "2.1.2"
     "@monaco-editor/react" "4.5.1"
-    "@payloadcms/translations" "3.0.0-beta.30"
+    "@payloadcms/translations" "3.0.0-beta.34"
     body-scroll-lock "4.0.0-beta.0"
     bson-objectid "2.0.4"
     date-fns "3.3.1"
@@ -1421,7 +1421,7 @@
     react-datepicker "6.2.0"
     react-image-crop "10.1.8"
     react-select "5.7.4"
-    react-toastify "10.0.4"
+    react-toastify "10.0.5"
     use-context-selector "1.4.1"
     uuid "9.0.1"
 
@@ -2528,11 +2528,6 @@ client-only@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
   integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
-
-clsx@^1.1.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
-  integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
 
 clsx@^2.1.0:
   version "2.1.1"
@@ -4304,12 +4299,12 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-payload@beta:
-  version "3.0.0-beta.30"
-  resolved "https://registry.yarnpkg.com/payload/-/payload-3.0.0-beta.30.tgz#fd2c662da67d20f986d18f43853aeae6cc75bf77"
-  integrity sha512-UhTTcytzzFW34JUQoRB/gcTcU/7RzP0aw48Ag04iU80zPP66wYuKAsLxGfyglYbgpcN1RcaG0jlvoav3SXlR3w==
+payload@3.0.0-beta.34:
+  version "3.0.0-beta.34"
+  resolved "https://registry.yarnpkg.com/payload/-/payload-3.0.0-beta.34.tgz#34ff52236bd2a0f008f90bab49ed10b40cb5b4dd"
+  integrity sha512-Xxlx4dYbirfFm3z1THPXzzeGVRBRqMiF7qa4/e6sngDWd8a9OaqC3lfL4jTWCltSD2PDlW4qjlVAem/sYsiyrg==
   dependencies:
-    "@payloadcms/translations" "3.0.0-beta.30"
+    "@payloadcms/translations" "3.0.0-beta.34"
     "@swc-node/core" "^1.13.0"
     "@swc-node/sourcemap-support" "^0.5.0"
     "@types/probe-image-size" "^7.2.4"
@@ -4649,19 +4644,12 @@ react-select@5.7.4:
     react-transition-group "^4.3.0"
     use-isomorphic-layout-effect "^1.1.2"
 
-react-toastify@10.0.4:
-  version "10.0.4"
-  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-10.0.4.tgz#6ecdbbf923a07fc45850e69b0566efc7bf733283"
-  integrity sha512-etR3RgueY8pe88SA67wLm8rJmL1h+CLqUGHuAoNsseW35oTGJEri6eBTyaXnFKNQ80v/eO10hBYLgz036XRGgA==
+react-toastify@10.0.5:
+  version "10.0.5"
+  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-10.0.5.tgz#6b8f8386060c5c856239f3036d1e76874ce3bd1e"
+  integrity sha512-mNKt2jBXJg4O7pSdbNUfDdTsK9FIdikfsIE/yUCxbAEXl4HMyJaivrVFcn3Elvt5xvCQYhUZm+hqTIu1UXM3Pw==
   dependencies:
     clsx "^2.1.0"
-
-react-toastify@8.2.0:
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-8.2.0.tgz#ef7d56bdfdc6272ca6b228368ab564721c3a3244"
-  integrity sha512-Pg2Ju7NngAamarFvLwqrFomJ57u/Ay6i6zfLurt/qPynWkAkOthu6vxfqYpJCyNhHRhR4hu7+bySSeWWJu6PAg==
-  dependencies:
-    clsx "^1.1.1"
 
 react-transition-group@^4.3.0, react-transition-group@^4.4.2:
   version "4.4.5"
