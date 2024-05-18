@@ -6,7 +6,7 @@ WORKDIR /home/node/app
 COPY package*.json ./
 
 COPY . .
-RUN yarn install
+# RUN yarn install
 RUN yarn build
 
 FROM base as runtime
@@ -18,7 +18,7 @@ WORKDIR /home/node/app
 COPY package*.json  ./
 COPY yarn.lock ./
 
-RUN yarn install --production
+# RUN yarn install --production
 COPY --from=builder /home/node/app/dist ./dist
 COPY --from=builder /home/node/app/build ./build
 
