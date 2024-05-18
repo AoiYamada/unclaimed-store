@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './index.scss'
-
 const baseClass = 'rich-text-large-body'
 
 const LargeBodyElement: React.FC<{
@@ -10,7 +8,14 @@ const LargeBodyElement: React.FC<{
   children: React.ReactNode
 }> = ({ attributes, children }) => (
   <div {...attributes}>
-    <span className={baseClass}>{children}</span>
+    <span
+      style={{
+        fontSize: 'base(.8)',
+      }}
+      className={baseClass}
+    >
+      {children}
+    </span>
   </div>
 )
 export default LargeBodyElement
