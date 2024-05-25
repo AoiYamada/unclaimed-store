@@ -284,7 +284,11 @@ export interface Product {
         blockType: 'archive';
       }
   )[];
-  priceJSON?: string | null;
+  price: {
+    active?: boolean | null;
+    currency?: 'ntd' | null;
+    unit_amount: number;
+  };
   categories?: (string | Category)[] | null;
   relatedProducts?: (string | Product)[] | null;
   slug?: string | null;

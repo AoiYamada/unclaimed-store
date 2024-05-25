@@ -26,6 +26,9 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
+  // graphQL: {
+  //   schemaOutputFile: path.resolve(dirname, 'generated-schema.graphql'),
+  // },
   db: mongooseAdapter({
     url: process.env.DATABASE_URI || '',
   }),
