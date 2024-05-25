@@ -40,7 +40,7 @@ export interface Config {
  */
 export interface Category {
   id: string;
-  title?: string | null;
+  title: string;
   updatedAt: string;
   createdAt: string;
 }
@@ -65,8 +65,6 @@ export interface Media {
   filesize?: number | null;
   width?: number | null;
   height?: number | null;
-  focalX?: number | null;
-  focalY?: number | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

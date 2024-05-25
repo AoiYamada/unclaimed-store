@@ -11,13 +11,9 @@ export const appearanceOptions = {
     label: 'Secondary Button',
     value: 'secondary',
   },
-  default: {
-    label: 'Default',
-    value: 'default',
-  },
 }
 
-export type LinkAppearances = 'primary' | 'secondary' | 'default'
+export type LinkAppearances = 'primary' | 'secondary'
 
 type LinkType = (options?: {
   appearances?: LinkAppearances[] | false
@@ -123,11 +119,7 @@ const link: LinkType = ({ appearances, disableLabel = false, overrides = {} } = 
   }
 
   if (appearances !== false) {
-    let appearanceOptionsToUse = [
-      appearanceOptions.default,
-      appearanceOptions.primary,
-      appearanceOptions.secondary,
-    ]
+    let appearanceOptionsToUse = [appearanceOptions.primary, appearanceOptions.secondary]
 
     if (appearances) {
       appearanceOptionsToUse = appearances.map((appearance) => appearanceOptions[appearance])
@@ -136,7 +128,7 @@ const link: LinkType = ({ appearances, disableLabel = false, overrides = {} } = 
     linkResult.fields.push({
       name: 'appearance',
       type: 'select',
-      defaultValue: 'default',
+      defaultValue: 'primary',
       options: appearanceOptionsToUse,
       admin: {
         description: 'Choose how the link should be rendered.',
