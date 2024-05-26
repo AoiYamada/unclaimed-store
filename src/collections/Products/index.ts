@@ -10,6 +10,7 @@ import { populateArchiveBlock } from '../../hooks/populateArchiveBlock'
 // import { beforeProductChange } from './hooks/beforeChange'
 import { deleteProductFromCarts } from './hooks/deleteProductFromCarts'
 import { revalidateProduct } from './hooks/revalidateProduct'
+import { checkRole } from '../Users/checkRole'
 
 const Products: CollectionConfig = {
   slug: 'products',
@@ -33,7 +34,13 @@ const Products: CollectionConfig = {
     drafts: true,
   },
   access: {
-    read: () => true,
+    read: (args) => {
+      if (checkRole(['admin'], args.req.user)) {
+        return true
+      }
+
+      return { _status: { not_equals: 'draft' } }
+    },
     create: admins,
     update: admins,
     delete: admins,
