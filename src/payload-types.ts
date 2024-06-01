@@ -12,8 +12,8 @@
  */
 export type CartItems =
   | {
-      product?: (string | null) | Product;
-      quantity?: number | null;
+      product: string | Product;
+      quantity: number;
       id?: string | null;
     }[]
   | null;
@@ -90,7 +90,7 @@ export interface Page {
             } | null;
             url?: string | null;
             label: string;
-            appearance?: ('default' | 'primary' | 'secondary') | null;
+            appearance?: ('primary' | 'secondary') | null;
           };
           id?: string | null;
         }[]
@@ -141,7 +141,7 @@ export interface Page {
                 } | null;
                 url?: string | null;
                 label: string;
-                appearance?: ('default' | 'primary' | 'secondary') | null;
+                appearance?: ('primary' | 'secondary') | null;
               };
               id?: string | null;
             }[]
@@ -241,7 +241,7 @@ export interface Product {
                 } | null;
                 url?: string | null;
                 label: string;
-                appearance?: ('default' | 'primary' | 'secondary') | null;
+                appearance?: ('primary' | 'secondary') | null;
               };
               id?: string | null;
             }[]

@@ -79,6 +79,7 @@ export const Users: CollectionConfig = {
               name: 'product',
               type: 'relationship',
               relationTo: 'products',
+              required: true,
             },
             {
               name: 'quantity',
@@ -87,6 +88,7 @@ export const Users: CollectionConfig = {
               admin: {
                 step: 1,
               },
+              required: true,
             },
           ],
         },
