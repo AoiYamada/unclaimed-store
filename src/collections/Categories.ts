@@ -14,6 +14,10 @@ const Categories: CollectionConfig = {
       type: 'text',
       required: true,
     },
+    {
+      name: 'template',
+      type: 'richText',
+    },
   ],
 }
 
