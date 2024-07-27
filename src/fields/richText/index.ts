@@ -9,7 +9,7 @@ import deepMerge from '../../utils/deepMerge'
 import link from '../link'
 import elements from './elements'
 import leaves from './leaves'
-import { RichTextField } from 'payload/types'
+import { RichTextField } from 'payload'
 
 type RichText = (
   overrides?: Partial<RichTextField> & { admin?: AdapterArguments['admin'] },

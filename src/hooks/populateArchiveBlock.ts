@@ -1,5 +1,5 @@
 import { Page, Product } from '@/payload-types'
-import type { CollectionAfterReadHook } from 'payload/types'
+import type { CollectionAfterReadHook } from 'payload'
 
 export const populateArchiveBlock: CollectionAfterReadHook = async ({
   doc,

@@ -1,4 +1,4 @@
-import type { Block, Field } from 'payload/types'
+import type { Block, Field } from 'payload'
 
 import { invertBackground } from '../../fields/invertBackground'
 import link from '../../fields/link'

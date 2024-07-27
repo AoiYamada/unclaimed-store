@@ -1,7 +1,7 @@
 import { slateEditor } from '@payloadcms/richtext-slate'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import type { CollectionConfig } from 'payload/types'
+import type { CollectionConfig } from 'payload'
 
 // ES6 hack to get the directory name of the current file
 const __filename = fileURLToPath(import.meta.url) // get the resolved path to the file

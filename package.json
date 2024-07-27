@@ -15,27 +15,28 @@
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-beta.34",
-    "@payloadcms/next": "3.0.0-beta.34",
-    "@payloadcms/plugin-cloud": "3.0.0-beta.34",
-    "@payloadcms/richtext-slate": "3.0.0-beta.34",
+    "@payloadcms/db-mongodb": "3.0.0-beta.70",
+    "@payloadcms/next": "3.0.0-beta.70",
+    "@payloadcms/plugin-cloud": "3.0.0-beta.70",
+    "@payloadcms/richtext-slate": "3.0.0-beta.70",
     "cross-env": "7.0.3",
     "graphql": "16.8.1",
-    "next": "14.3.0-canary.28",
-    "payload": "3.0.0-beta.34",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "next": "15.0.0-canary.53",
+    "payload": "3.0.0-beta.70",
+    "react": "^19.0.0-rc-6230622a1a-20240610",
+    "react-dom": "^19.0.0-rc-6230622a1a-20240610",
+    "sharp": "0.32.6"
   },
   "devDependencies": {
     "@swc/core": "1.5.7",
     "@types/node": "^20.12.12",
-    "@types/react": "18.3.3",
-    "@types/react-dom": "18.3.0",
-    "dotenv": "16.4.5",
-    "tsx": "4.11.0",
-    "typescript": "5.4.5"
+    "@types/react": "npm:types-react@19.0.0-rc.0",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.0-canary.53",
+    "typescript": "5.5.3"
   },
   "engines": {
-    "node": ">=18.19.0"
+    "node": "^18.20.2 || >=20.9.0"
   }
 }

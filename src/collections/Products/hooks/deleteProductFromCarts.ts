@@ -1,4 +1,4 @@
-import { CollectionAfterDeleteHook } from 'payload/types'
+import { CollectionAfterDeleteHook } from 'payload'
 import type { CartItems, Product } from '../../../payload-types'
 
 export const deleteProductFromCarts: CollectionAfterDeleteHook<Product> = async ({ req, id }) => {

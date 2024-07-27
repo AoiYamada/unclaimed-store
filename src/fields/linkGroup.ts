@@ -1,4 +1,4 @@
-import type { ArrayField, Field } from 'payload/types'
+import type { ArrayField, Field } from 'payload'
 
 import deepMerge from '../utils/deepMerge'
 import type { LinkAppearances } from './link'

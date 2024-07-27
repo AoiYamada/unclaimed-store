@@ -1,5 +1,5 @@
 import { User } from '@/payload-types'
-import { CollectionAfterChangeHook } from 'payload/types'
+import { CollectionAfterChangeHook } from 'payload'
 
 export const loginAfterCreate: CollectionAfterChangeHook<User> = async ({
   doc,

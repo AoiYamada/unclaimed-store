@@ -1,4 +1,4 @@
-import type { CollectionConfig } from 'payload/types'
+import type { CollectionConfig } from 'payload'
 
 import { admins } from '../../access/admins'
 import { Archive } from '../../blocks/ArchiveBlock'
@@ -82,7 +82,7 @@ const Products: CollectionConfig = {
               name: 'info',
               type: 'richText',
               admin: {
-                condition: (data) => !!data.category,
+                condition: (data) => data.categories.length > 0,
               },
               hooks: {
                 afterChange: [infoAfterChange],
@@ -152,6 +152,9 @@ const Products: CollectionConfig = {
       type: 'relationship',
       relationTo: 'products',
       hasMany: true,
+      admin: {
+        position: 'sidebar',
+      },
       filterOptions: ({ id }) => {
         return {
           id: {

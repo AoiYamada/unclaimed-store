@@ -1,4 +1,4 @@
-import { CollectionAfterChangeHook } from 'payload/types'
+import { CollectionAfterChangeHook } from 'payload'
 import { revalidate } from '../../../utils/revalidate'
 
 // Revalidate the page in the background, so the user doesn't have to wait
