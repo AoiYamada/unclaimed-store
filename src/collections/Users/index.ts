@@ -25,6 +25,9 @@ export const Users: CollectionConfig = {
     afterChange: [loginAfterCreate],
   },
   auth: true,
+  // auth: {
+  //   verify: true,
+  // },
   fields: [
     {
       name: 'name',

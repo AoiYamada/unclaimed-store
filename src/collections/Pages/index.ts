@@ -24,7 +24,7 @@ export const Pages: CollectionConfig = {
   },
   hooks: {
     afterChange: [revalidatePage],
-    afterRead: [populateArchiveBlock],
+    // afterRead: [populateArchiveBlock],
   },
   versions: {
     drafts: true,

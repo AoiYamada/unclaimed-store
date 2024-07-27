@@ -28,7 +28,7 @@ const Products: CollectionConfig = {
     // FIXME: we don't use stripe
     // beforeChange: [beforeProductChange],
     afterChange: [revalidateProduct],
-    afterRead: [populateArchiveBlock],
+    // afterRead: [populateArchiveBlock],
     afterDelete: [deleteProductFromCarts],
   },
   versions: {
