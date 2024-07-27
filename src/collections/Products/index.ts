@@ -84,9 +84,6 @@ const Products: CollectionConfig = {
               admin: {
                 condition: (data) => data.categories.length > 0,
               },
-              hooks: {
-                afterChange: [infoAfterChange],
-              },
             },
           ],
         },
@@ -145,6 +142,9 @@ const Products: CollectionConfig = {
       hasMany: true,
       admin: {
         position: 'sidebar',
+      },
+      hooks: {
+        afterChange: [infoAfterChange],
       },
     },
     {

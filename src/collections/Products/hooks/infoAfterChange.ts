@@ -1,11 +1,11 @@
-import type { FieldHook } from 'payload'
-import payload from 'payload'
+import type { FieldHook, PayloadRequest } from 'payload'
 
-export const getCategoriesTemplate = async (categoryId: string) => {
+export const getCategoriesTemplate = async (categoryId: string, req: PayloadRequest) => {
   try {
-    const category = await payload.findByID({
-      collection: 'categories',
+    const category = await req.payload.findByID({
       id: categoryId,
+      collection: 'categories',
+      depth: 0,
     })
 
     return category.template
@@ -14,10 +14,15 @@ export const getCategoriesTemplate = async (categoryId: string) => {
   }
 }
 
-export const infoAfterChange: FieldHook = async ({ data, operation }) => {
-  if (data && (operation === 'create' || operation === 'update')) {
-    data.info = await getCategoriesTemplate(data.categories)
+export const infoAfterChange: FieldHook = async ({ data, operation, req }) => {
+  if (
+    data &&
+    data?.categories.length > 0 &&
+    (['create', 'update'] as (string | undefined)[]).includes(operation)
+  ) {
+    // always get the first category's template
+    let info = await getCategoriesTemplate(data.categories[0], req)
   }
 
-  return data
+  return
 }
