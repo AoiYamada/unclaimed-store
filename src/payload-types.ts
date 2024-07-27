@@ -41,6 +41,9 @@ export interface Config {
 export interface Category {
   id: string;
   title: string;
+  template: {
+    [k: string]: unknown
+  }[];
   updatedAt: string;
   createdAt: string;
 }

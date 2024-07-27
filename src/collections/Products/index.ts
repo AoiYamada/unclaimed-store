@@ -11,6 +11,7 @@ import { populateArchiveBlock } from '../../hooks/populateArchiveBlock'
 import { deleteProductFromCarts } from './hooks/deleteProductFromCarts'
 import { revalidateProduct } from './hooks/revalidateProduct'
 import { checkRole } from '../Users/checkRole'
+import { infoAfterChange } from './hooks/infoAfterChange'
 
 const Products: CollectionConfig = {
   slug: 'products',
@@ -78,10 +79,14 @@ const Products: CollectionConfig = {
           label: 'Content',
           fields: [
             {
-              name: 'layout',
-              type: 'blocks',
-              required: true,
-              blocks: [CallToAction, Content, MediaBlock, Archive],
+              name: 'info',
+              type: 'richText',
+              admin: {
+                condition: (data) => !!data.category,
+              },
+              hooks: {
+                afterChange: [infoAfterChange],
+              },
             },
           ],
         },
