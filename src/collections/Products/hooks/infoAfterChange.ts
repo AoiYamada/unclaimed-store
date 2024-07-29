@@ -14,6 +14,7 @@ export const getCategoriesTemplate = async (categoryId: string, req: PayloadRequ
   }
 }
 
+// currently not in use, but keep for reference
 export const infoAfterChange: FieldHook = async ({ data, operation, req }) => {
   if (
     data &&

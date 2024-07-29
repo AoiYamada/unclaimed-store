@@ -11,7 +11,7 @@ import { populateArchiveBlock } from '../../hooks/populateArchiveBlock'
 import { deleteProductFromCarts } from './hooks/deleteProductFromCarts'
 import { revalidateProduct } from './hooks/revalidateProduct'
 import { checkRole } from '../Users/checkRole'
-import { infoAfterChange } from './hooks/infoAfterChange'
+import { ApplyTemplateField } from './fields/ApplyTemplateField'
 
 const Products: CollectionConfig = {
   slug: 'products',
@@ -78,6 +78,7 @@ const Products: CollectionConfig = {
         {
           label: 'Content',
           fields: [
+            ApplyTemplateField,
             {
               name: 'info',
               type: 'richText',
@@ -140,11 +141,9 @@ const Products: CollectionConfig = {
       type: 'relationship',
       relationTo: 'categories',
       hasMany: true,
+      maxRows: 10,
       admin: {
         position: 'sidebar',
-      },
-      hooks: {
-        afterChange: [infoAfterChange],
       },
     },
     {
